@@ -2,6 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/satoshi/Satoshi-Regular.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Medium";
+  src: url("/fonts/satoshi/Satoshi-Medium.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Light";
+  src: url("/fonts/satoshi/Satoshi-Light.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/fonts/satoshi/Satoshi-Bold.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Satoshi-Black";
+  src: url("/fonts/satoshi/Satoshi-Black.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monument";
+  src: url("/fonts/monument/MonumentExtended-Regular.otf") format("opentype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Monument-Bold";
+  src: url("/fonts/monument/MonumentExtended-Ultrabold.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -18,10 +55,5 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: black;
 }
