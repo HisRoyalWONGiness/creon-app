@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="absolute z-50 font-monument pt-14 tablet:pr-56 laptop:pr-12 desktop:pr-0 desktop:pl-[150px] px-[15px] tablet:px-[30px] mt-[280px] tablet:mt-[350px] w-full desktop:max-w-[1440px]">
+    <div className="absolute font-monument pt-14 tablet:pr-56 laptop:pr-12 desktop:pr-0 desktop:pl-[150px] px-[15px] tablet:px-[30px] mt-[280px] tablet:mt-[350px] w-full desktop:max-w-[1440px]">
       <span className="uppercase phone:leading-[35.2px] tablet:leading-[48.4px] laptop:leading-[48.4px] font-normal text-white text-[22px] phone:text-[32px] tablet:text-[44px] laptop:text-[44px] desktop:hidden">
         Empowering AI-Crypto Innovations and Integrating AI Tools into crypto.
       </span>

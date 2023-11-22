@@ -4,6 +4,9 @@ import Logo from "./svg/Logo";
 import Hamburger from "./svg/Hamburger";
 import ButtonWhite from "./buttons/ButtonWhite";
 import Close from "./svg/Close";
+import Telegram from "./svg/Telegram";
+import Discord from "./svg/Discord";
+import Twitter from "./svg/Twitter";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,6 +55,7 @@ const Navbar: React.FC = () => {
             <ButtonWhite title="Connect" />
           </div>
         </div>
+        <ButtonWhite size="small" title="Connect" />
 
         <button
           className="lg:hidden z-50 transition-all duration-150 active:scale-90"
@@ -66,7 +70,7 @@ const Navbar: React.FC = () => {
         <>
           {/* Overlay for the entire screen */}
           <div
-            className="fixed inset-0 bg-black opacity-20 blur-lg"
+            className="fixed inset-0 bg-black opacity-60 z-40"
             onClick={closeNavbar}
           ></div>
         </>
@@ -75,7 +79,7 @@ const Navbar: React.FC = () => {
       <div
         className={`lg:hidden fixed inset-y-0 right-0 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300 ease-in-out w-2/3`}
+        } transition-transform duration-300 ease-in-out w-2/3 z-50`}
       >
         <div className="flex flex-col items-center h-full bg-black text-white px-8 py-4">
           <div className="flex justify-between w-full">
@@ -103,6 +107,11 @@ const Navbar: React.FC = () => {
                 )}
               </div>
             ))}
+          </div>
+          <div className="absolute bottom-1 left-6">
+            <div className="flex gap-3 mb-5">
+              <Telegram /> <Discord /> <Twitter />
+            </div>
           </div>
         </div>
       </div>

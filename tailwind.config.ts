@@ -20,6 +20,7 @@ const config: Config = {
         "hero-background-2": "url('/images/hero2.jpg')",
         "hero-background-3": "url('/images/hero3.jpg')",
         "hero-background-4": "url('/images/hero4.jpg')",
+        "bottom-background": "url('/images/background.svg')",
       },
       fontFamily: {
         sans: ['"Satoshi"', "sans-serif"],

@@ -1,7 +1,11 @@
+import AITools from "@/components/AITools";
 import CreonPass from "@/components/CreonPass";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import ProfitingThrough from "@/components/ProfitingThrough";
+import Tokens from "@/components/Tokens";
+import Vision from "@/components/Vision";
 
 export default function Home() {
   return (
@@ -11,11 +15,18 @@ export default function Home() {
         <div className="absolute top-0 bg-gradient-to-t from-[#000000] via-[#3D8BFF] to-[#AB23FF] opacity-40 w-full h-full"></div>
         <Hero />
       </div>
-      <div>
-        <CreonPass />
-      </div>
-
-      <main className="flex min-h-screen flex-col items-center justify-between p-24"></main>
+      <main className="">
+        <div className="desktop:px-[250px] px-[15px] tablet:px-[30px] w-full">
+          <CreonPass />
+          <ProfitingThrough />
+          <Vision />
+          <Tokens />
+        </div>
+        <div className="desktop:px-[250px] px-[15px] tablet:px-[30px] w-full bg-bottom-background">
+          <AITools />
+          <Footer />
+        </div>
+      </main>
     </div>
   );
 }
