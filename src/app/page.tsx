@@ -17,14 +17,27 @@ export default function Home() {
       </div>
       <main className="">
         <div className="desktop:px-[250px] px-[15px] tablet:px-[30px] w-full">
-          <CreonPass />
-          <ProfitingThrough />
-          <Vision />
-          <Tokens />
+          <div className="hidden desktop:block">
+            <CreonPass />
+            <ProfitingThrough />
+            <Vision />
+            <Tokens />
+          </div>
+          <div className="block desktop:hidden">
+            <Vision />
+            <ProfitingThrough />
+            <AITools />
+            <CreonPass />
+            <Tokens />
+          </div>
         </div>
         <div className="desktop:px-[250px] px-[15px] tablet:px-[30px] w-full bg-bottom-background">
-          <AITools />
-          <Footer />
+          <div>
+            <div className="hidden desktop:block">
+              <AITools />
+            </div>
+            <Footer />
+          </div>
         </div>
       </main>
     </div>
