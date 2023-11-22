@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden z-50 font-satoshi font-bold text-[18px] pr-[40px] lg:flex">
+        <div className="hidden z-50 font-satoshi font-bold text-[18px] pr-[40px] laptop:flex">
           <div className="flex items-center h-full w-full gap-x-[40px] text-white p-4">
             {menuItems.map((item, index) => (
               <div key={index} className="flex items-center gap-x-[4px]">
@@ -55,14 +55,18 @@ const Navbar: React.FC = () => {
             <ButtonWhite title="Connect" />
           </div>
         </div>
-        <ButtonWhite size="small" title="Connect" />
+        <div className="flex lg:hidden gap-x-5 items-center">
+          <div className="">
+            <ButtonWhite size="small" title="Connect" />
+          </div>
 
-        <button
-          className="lg:hidden z-50 transition-all duration-150 active:scale-90"
-          onClick={toggleNavbar}
-        >
-          <Hamburger />
-        </button>
+          <button
+            className="z-50 transition-all duration-150 active:scale-90"
+            onClick={toggleNavbar}
+          >
+            <Hamburger />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
